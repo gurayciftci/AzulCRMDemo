@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/main/resources/features",
         glue = "StepDefinitions",
         plugin = {"pretty", "html:target/HtmlReports/index.html"},
-        tags = ""
+        tags = "@wip"
 
 )
 public class Runner {

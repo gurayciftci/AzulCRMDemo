@@ -1,6 +1,7 @@
 Feature: Login Page
   As a user, I want to be able to perform login.
 
+  @loginPageTest
   Scenario Outline: Successful login with valid username and password
     Given the user is on the login page
     When the user enters a valid "<username>" and "<password>"
