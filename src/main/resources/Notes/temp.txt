@@ -1,0 +1,10 @@
+Scenario Outline: Failed login with invalid username or password
+    Given the user is on the login page
+    When the user enters an invalid "<username>" or "<password>"
+    And clicks the login button
+    Then the user sees the error message "Incorrect login or password"
+
+    Examples:
+      | username                     | password        |
+      | helpdesk1@cybertekschool.com | invalidPassword |
+      | invalidUsername              | UserUser        |
