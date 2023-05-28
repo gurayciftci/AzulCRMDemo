@@ -14,4 +14,18 @@ Feature: Main Page Actions
       | message     |
       | hello340012 |
 
+  @mainPageTest @wip
+  Scenario Outline: Event Setting
+  Send a message and observe it on Activity Stream
+    Given User is in the main page
+    When User clicks the EVENT button
+    And User texts a event name "<eventName>" to the message box
+    And User texts a event details "<eventDetails>" to the message box
+    And User select start date and time
+    And User clicks SEND button
+    Then Event should be displayed correctly and should be same with event name "<eventName>" and event details "<eventDetails>"
+
+    Examples:
+      | eventName | eventDetails      |
+      | Test15.59 | Test15.59 - event Details|
 
