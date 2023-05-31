@@ -14,7 +14,7 @@ Feature: Main Page Actions
       | message     |
       | hello340012 |
 
-  @mainPageTest @wip
+  @mainPageTest
   Scenario Outline: Event Setting
   Send a message and observe it on Activity Stream
     Given User is in the main page

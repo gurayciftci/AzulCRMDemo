@@ -54,6 +54,7 @@ public class mainPageStepDef {
         String expectedResult = string;
         String actualResult = driver.findElement(By.xpath("(//div[@class='feed-post-text-block'])[1]//div[@class='feed-post-text-block-inner-inner']")).getText();
         System.out.println("Actual Result is: "+ actualResult +"\nExpected Result is: " + expectedResult);
+        Assert.assertEquals(expectedResult,actualResult);
     }
 
     @When("User clicks the EVENT button")
